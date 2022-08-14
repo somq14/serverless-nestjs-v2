@@ -1,23 +1,19 @@
 {
   "name": "serverless-nestjs-v2",
   "packageManager": "yarn@3.2.2",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "postinstall": "husky install",
-    "clean": "rm -r dist",
     "format": "prettier --ignore-path .gitignore --ignore-unknown --check \"**/*\"",
-    "lint": "eslint --ignore-path .gitignore --max-warnings 0 \"**/*.{js,jsx,cjs,mjs,ts,tsx}\"",
-    "build": "tsc",
-    "test": "jest"
+    "lint": "yarn workspaces foreach run lint",
+    "build": "yarn workspaces foreach run build",
+    "test": "yarn workspaces foreach run test"
   },
   "devDependencies": {
-    "@somq14/eslint-config": "somq14/eslint-config#v1.0.0",
-    "@types/jest": "28.1.6",
-    "eslint": "8.21.0",
     "husky": "8.0.1",
-    "jest": "28.1.3",
     "lint-staged": "13.0.3",
-    "prettier": "2.7.1",
-    "ts-jest": "28.0.7",
-    "typescript": "4.7.4"
+    "prettier": "2.7.1"
   }
 }
