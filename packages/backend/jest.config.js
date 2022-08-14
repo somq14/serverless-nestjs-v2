@@ -8,5 +8,5 @@ module.exports = {
   preset: "ts-jest",
 
   // テストファイルを検索するディレクトリを指定する。
-  roots: ["<rootDir>/src"],
+  roots: ["<rootDir>/apps"],
 };

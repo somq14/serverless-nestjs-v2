@@ -88,7 +88,7 @@
 
     // ソースコードのルートディレクトリを指定する。
     // コンパイル先はこのルートと同じフォルダ構造になる。
-    "rootDir": "./src",
+    // "rootDir": "./src",
 
     // node_modules を検索する方法を指定する。
     "moduleResolution": "node",
