@@ -17,6 +17,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/api/tsconfig.app.json"
       }
+    },
+    "api-aws-lambda": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "aws-lambda-handler",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
     }
   }
 }
