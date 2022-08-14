@@ -4,4 +4,4 @@ import * as cdk from "aws-cdk-lib";
 import { MainStack } from "./main-stack";
 
 const app = new cdk.App();
-new MainStack(app, "serverless-nestjs-v2", {});
+new MainStack(app, "nestjs-v2-dev", {});
