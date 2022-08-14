@@ -1,5 +1,5 @@
 {
-  "name": "typescript-template",
+  "name": "serverless-nestjs-v2",
   "packageManager": "yarn@3.2.2",
   "scripts": {
     "postinstall": "husky install",

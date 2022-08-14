@@ -1,1 +1,1 @@
-# typescript-template
+# serverless-nestjs-v2
