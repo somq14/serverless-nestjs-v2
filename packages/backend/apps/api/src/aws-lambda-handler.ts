@@ -1,3 +1,4 @@
+import "source-map-support/register";
 import { RequestListener } from "http";
 
 import { NestFactory } from "@nestjs/core";

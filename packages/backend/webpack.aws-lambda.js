@@ -18,6 +18,9 @@ module.exports = (config, webpack) => {
       },
     },
 
+    // ソースマップをインラインで生成する
+    devtool: "inline-source-map",
+
     // コードサイズが小さくなるようコードを圧縮する。
     optimization: {
       minimize: true,
