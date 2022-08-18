@@ -7,6 +7,10 @@ const nodeExternals = require("webpack-node-externals");
 module.exports = (config) => {
   return {
     ...config,
+
+    // ソースマップをインラインで生成する
+    devtool: "inline-source-map",
+
     externals: [
       // node_modules はバンドル対象から除外する
       // プロジェクトルートにある node_modules も除外する
