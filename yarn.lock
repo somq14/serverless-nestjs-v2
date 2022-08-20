@@ -2740,10 +2740,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"constructs@npm:10.1.75":
-  version: 10.1.75
-  resolution: "constructs@npm:10.1.75"
-  checksum: e3ba96f30b6a4c22843a63bbaadf9d57728a52159410c29cd1d7f80068b7687e3d582239cacec5d5d2c4291e9a09e60c956005a2ceb59442f745e75be538cd3f
+"constructs@npm:10.1.81":
+  version: 10.1.81
+  resolution: "constructs@npm:10.1.81"
+  checksum: 39d1dc70961ef3e821429ef9d3b038c05b0f9f95be9042ac9d1aa8beb757eb07a46ab85c1918c25b59e5bb9f373bc248e0614b38d98cd0e355833327764cf3cd
   languageName: node
   linkType: hard
 
@@ -4406,7 +4406,7 @@ __metadata:
     "@types/node": 18.7.3
     aws-cdk: 2.37.1
     aws-cdk-lib: 2.37.1
-    constructs: 10.1.75
+    constructs: 10.1.81
     source-map-support: 0.5.21
     ts-node: 10.9.1
     typescript: 4.7.4
