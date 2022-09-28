@@ -1,4 +1,4 @@
-.yarn/cache
+# .yarn/cache
 .yarn/install-state.gz
 .git
 **/node_modules
