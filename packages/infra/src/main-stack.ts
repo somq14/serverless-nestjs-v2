@@ -1,5 +1,5 @@
 import * as cdk from "aws-cdk-lib";
-import { Stack } from "aws-cdk-lib";
+import { BundlingOutput, Stack } from "aws-cdk-lib";
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
 import * as lambda from "aws-cdk-lib/aws-lambda";
 import { Construct } from "constructs";
@@ -10,12 +10,13 @@ export class MainStack extends cdk.Stack {
     super(scope, id, props);
     const stack = Stack.of(this);
 
-    const handler = new lambda.Function(this, "handler", {
-      runtime: lambda.Runtime.NODEJS_16_X,
-      code: lambda.Code.fromAsset(
-        path.resolve(__dirname, "..", "..", "backend", "dist", "apps", "api")
+    const handler = new lambda.Function(this, "handler2", {
+      runtime: lambda.Runtime.FROM_IMAGE,
+      handler: lambda.Handler.FROM_IMAGE,
+      code: lambda.Code.fromAssetImage(
+        path.resolve(__dirname, "..", "..", ".."),
+        { target: "api" }
       ),
-      handler: "aws-lambda-handler.handler",
       memorySize: 512,
     });
 
