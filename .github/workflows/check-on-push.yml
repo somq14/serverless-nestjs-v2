@@ -28,6 +28,8 @@ jobs:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-buildx-
+      - run: ls
+      - run: du -h -d 1
       - uses: docker/build-push-action@v3
         with:
           tags: base:latest
