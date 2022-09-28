@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y git \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
+RUN ls
 COPY .yarn .yarn
 COPY .yarnrc.yml package.json yarn.lock ./
 COPY packages/backend/package.json packages/backend/
